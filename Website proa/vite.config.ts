@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
+import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -9,7 +8,7 @@ export default defineConfig({
     __BASE_PATH__: JSON.stringify('/'),
   },
   build: {
-    outDir: 'out',
+    outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
       output: {
@@ -19,3 +18,4 @@ export default defineConfig({
   },
   publicDir: 'public',
 })
+Fix vercel build
