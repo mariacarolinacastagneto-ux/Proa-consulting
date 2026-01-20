@@ -18,4 +18,4 @@ export default defineConfig({
   },
   publicDir: 'public',
 })
-Fix vercel build
+
